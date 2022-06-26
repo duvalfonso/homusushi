@@ -6,6 +6,7 @@
   --white: #FFF;
   --red: #A61717;
   --gray: #666;
+  --dark-gray: #444;
   --light-black: #222;
 }
 
@@ -163,25 +164,31 @@ header .navbar a:hover {
 }
 
 .popular .box-container .box {
-  padding: 4.7rem 2rem;
+  padding: 3rem 2rem 0 2rem;
   background: #FFF;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
   border: .1rem solid rgba(0, 0, 0, .3);
   border-radius: .5rem;
   text-align: center;
-  flex: 1 1 48rem;
+  flex: 1 1 29rem;
   position: relative;
 }
 
 .popular .box-container .box .price {
   position: absolute;
-  top: 2rem; left: 2rem;
+  top: 2rem; left: 0;
   background: var(--orange);
   color: #FFF;
   font-size: 1.8rem;
   padding: .2rem .8rem;
-  border-radius: .5rem;
+  border-radius: 0 .5rem .5rem 0;
 }
+
+.popular .box-container .box .price > p {
+  text-decoration: line-through;
+  font-size: 1.5rem;
+}
+
 
 .popular .box-container .box h3 {
   font-size: 4rem;
@@ -243,6 +250,7 @@ header .navbar a:hover {
 .arma-tu-roll .container .box b {
   font-size: 2rem;
   text-decoration: underline var(--yellow);
+  color: var(--orange);
   padding-left: 2rem;
 }
 
@@ -266,6 +274,7 @@ header .navbar a:hover {
 .arma-tu-roll .salsas b {
   font-size: 2.5rem;
   color: #333;
+  text-transform: none;
 }
 
 .arma-tu-roll .salsas p {
