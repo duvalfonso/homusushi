@@ -296,7 +296,7 @@ header .navbar a:hover {
   margin-top: 4rem;
 }
 
-.otros .container .box b, p {
+.otros .container .box b, .otros .container .box p {
   font-size: 1.4rem;
   text-align: center;
 }
